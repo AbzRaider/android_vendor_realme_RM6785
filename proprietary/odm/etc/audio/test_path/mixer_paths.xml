@@ -70,11 +70,10 @@
         <ctl name="ADDA_DL_CH3 ADDA_UL_CH1" value="1" />
         <ctl name="ADDA_DL_CH4 ADDA_UL_CH2" value="1" />
 
-        <ctl name="Mic_Type_Mux_2" value="DCC" />
         <ctl name="Mic_Type_Mux_0" value="DCC" />
 
         <ctl name="MISO0_MUX" value="UL1_CH1" />
-        <ctl name="MISO1_MUX" value="UL1_CH2" />
+        <ctl name="MISO1_MUX" value="UL1_CH1" />
         <ctl name="ADC_L_Mux" value="Left Preamplifier" />
         <ctl name="PGA_L_Mux" value="AIN0" />
         <ctl name="ADC_R_Mux" value="Right Preamplifier" />
@@ -92,7 +91,7 @@
         <ctl name="HPR Mux" value="Open" />
 
         <ctl name="Mic_Type_Mux_0" value="Idle" />
-        <ctl name="Mic_Type_Mux_2" value="Idle" />
+        <ctl name="Mic_Type_Mux_1" value="Idle" />
         <ctl name="ADC_L_Mux" value="Idle" />
         <ctl name="PGA_L_Mux" value="None" />
         <ctl name="ADC_R_Mux" value="Idle" />
@@ -106,36 +105,28 @@
         <ctl name="ADDA_DL_CH4 ADDA_UL_CH2" value="0" />
     </path>
     <path name="MainMic_HpLEn">
-        <ctl name="UL1_CH1 ADDA_UL_CH1" value="1" />
-        <ctl name="UL1_CH2 ADDA_UL_CH2" value="1" />
-
-        <ctl name="Mic_Type_Mux_2" value="DCC" />
-        <ctl name="Mic_Type_Mux_0" value="DCC" />
-
+	<ctl name="UL1_CH1 ADDA_UL_CH1" value="1" />
+	<ctl name="UL1_CH2 ADDA_UL_CH2" value="1" />
+	<ctl name="Mic_Type_Mux_0" value="DCC" />
         <ctl name="MISO0_MUX" value="UL1_CH1" />
-        <ctl name="MISO1_MUX" value="UL1_CH2" />
+        <ctl name="MISO1_MUX" value="UL1_CH1" />
         <ctl name="ADC_L_Mux" value="Left Preamplifier" />
         <ctl name="PGA_L_Mux" value="AIN0" />
-        <ctl name="ADC_R_Mux" value="Right Preamplifier" />
-        <ctl name="PGA_R_Mux" value="AIN2" />
         <ctl name="DMIC0_MUX" value="DMIC_DATA0" />
-        <ctl name="DMIC1_MUX" value="DMIC_DATA1_L_1" />
-
-        <ctl name="Audio_PGA1_Setting" value="18Db" />
+        <ctl name="DMIC1_MUX" value="DMIC_DATA0" />
+	<ctl name="Audio_PGA1_Setting" value="12Db" />
         <ctl name="Audio_PGA2_Setting" value="18Db" />
     </path>
     <path name="MainMic_HpLDis">
-        <ctl name="Mic_Type_Mux_0" value="Idle" />
-        <ctl name="Mic_Type_Mux_2" value="Idle" />
-        <ctl name="ADC_L_Mux" value="Idle" />
-        <ctl name="PGA_L_Mux" value="None" />
-        <ctl name="ADC_R_Mux" value="Idle" />
-        <ctl name="PGA_R_Mux" value="None" />
-        <ctl name="UL_SRC_MUX" value="AMIC" />
-        <ctl name="UL2_SRC_MUX" value="AMIC" />
-
         <ctl name="UL1_CH1 ADDA_UL_CH1" value="0" />
         <ctl name="UL1_CH2 ADDA_UL_CH2" value="0" />
+        <ctl name="Mic_Type_Mux_0" value="Idle" />
+        <ctl name="Mic_Type_Mux_2" value="Idle" />
+        <ctl name="MISO1_MUX" value="UL1_CH2" />
+        <ctl name="ADC_L_Mux" value="Idle" />
+        <ctl name="PGA_L_Mux" value="None" />
+        <ctl name="UL_SRC_MUX" value="AMIC" />
+        <ctl name="UL2_SRC_MUX" value="AMIC" />
     </path>
     <path name="RefMic_HpREn">
         <ctl name="ADDA_DL_CH1 ADDA_UL_CH1" value="1" />
@@ -521,5 +512,5 @@
     <settings name="headphonedevice" value="30" />
     <settings name="wavefilepath" value="/odm/etc/audio/spk.wav" />
     <settings name="wave112filepath" value="/odm/etc/audio/file112.wav" />
-    <settings name="loopback_mictype" value="loopbacktest=main,sec" />
+    <settings name="loopback_mictype" value="loopbacktest=main" />
 </mixer>

@@ -9,6 +9,7 @@
     <Param path="HS5POLE" param_id="4"/>
     <Param path="HS5POLE_ANC" param_id="4"/>
     <Param path="USB" param_id="1"/>
+		<Param path="HEARING_AID" param_id="1"/>
     <Param path="Default,RCV" param_id="12"/>
     <Param path="Default,HAC" param_id="12"/>
     <Param path="Default,HS" param_id="13"/>
