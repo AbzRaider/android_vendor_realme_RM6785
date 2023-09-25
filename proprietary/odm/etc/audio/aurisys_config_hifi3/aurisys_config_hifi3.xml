@@ -58,7 +58,7 @@
                            enable_log="1"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <downlink_process>
                         <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
                                  num_channels="1"/>
@@ -88,7 +88,7 @@
                            enable_log="1"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <downlink_process>
                         <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
                                  num_channels="1,2"/>
@@ -135,7 +135,7 @@
                            enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <downlink_process>
                         <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
                                  num_channels="2"/>
@@ -152,7 +152,7 @@
                            enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <downlink_process>
                         <buf_in  data_buf_type="DATA_BUF_DOWNLINK_IN"
                                  num_channels="2"/>
@@ -183,7 +183,7 @@
                            enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <uplink_process>
                         <buf_in  data_buf_type="DATA_BUF_UPLINK_IN"
                                  num_channels="1,2"/>
@@ -210,7 +210,7 @@
                            enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <uplink_process>
                         <buf_in  data_buf_type="DATA_BUF_UPLINK_IN"
                                  num_channels="2"/>
@@ -237,7 +237,7 @@
                            enable_log="0"
                            enable_raw_dump="0"
                            enable_lib_dump="0"
-                           enhancement_mode="0">
+                           enhancement_mode="1">
                     <uplink_process>
                         <buf_in  data_buf_type="DATA_BUF_UPLINK_IN"
                                  num_channels="2"/>
