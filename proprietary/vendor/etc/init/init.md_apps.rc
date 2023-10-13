@@ -1,6 +1,12 @@
 on boot
      setprop ro.vendor.md_apps.support 1
      setprop ro.vendor.md_apps.load_type user
+<<<<<<< HEAD:proprietary/vendor/etc/init/init.md_apps.rc
      setprop ro.vendor.md_apps.load_verno "MOLY.LR13.R1.TC16.PR10.SP.V1.P44"
      setprop ro.vendor.md_apps.load_gencfg "GEN95_USER"
      setprop ro.vendor.md_apps.load_date "2022/08/05 23:23:31 GMT -04:00"
+=======
+     setprop ro.vendor.md_apps.load_verno "MOLY.LR13.R1.TC16.PR11.SP.V2.P17"
+     setprop ro.vendor.md_apps.load_gencfg "GEN95_USER"
+     setprop ro.vendor.md_apps.load_date "2023/02/24 09:57:18 GMT +08:00"
+>>>>>>> 5e68cdf (RM6785: Update radio blobs from Narzo 30 4G):RM6785/proprietary/vendor/etc/init/init.md_apps.rc
