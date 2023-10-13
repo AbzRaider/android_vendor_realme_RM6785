@@ -532,6 +532,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.cccimdinit.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccimdinit.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.cccirpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.cccirpcd.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.fpsgo.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.fpsgo.rc \
+    vendor/realme/RM6785/proprietary/vendor/etc/init/init.connfem.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.connfem.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.gps_drv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.gps_drv.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.md_apps.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.md_apps.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/init.thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.thermal.rc \
@@ -833,6 +834,7 @@ PRODUCT_PACKAGES += \
     libcarrierconfig \
     libccci_util \
     libcharon-ss \
+    libconnfem \
     libcrypto-md \
     libcrypto-ss \
     libcurl-md \
@@ -873,8 +875,6 @@ PRODUCT_PACKAGES += \
     libmtkspparser \
     libmtksysutils \
     libnvram \
-    libnvram_daemon_callback \
-    libnvram_platform \
     libnvram_sec \
     libperfctl_vendor \
     libpixelflinger \
