@@ -514,7 +514,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-mtk-neuron.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.sensors@2.0-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@2.0-service-mediatek.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.thermal@2.0-service.mtk.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.usb@1.1-service-mediatek.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service-mediatek.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/android.hardware.wifi.supplicant-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi.supplicant-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/atcid.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/atcid.rc \
@@ -805,7 +804,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
     vendor/realme/RM6785/proprietary/vendor/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/modules/modules.dep \
-    vendor/realme/RM6785/proprietary/vendor/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/modules/modules.load
+    vendor/realme/RM6785/proprietary/vendor/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/modules/modules.load \
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
@@ -1020,14 +1020,12 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-mediatek \
     android.hardware.camera.provider@2.6-impl-mediatek \
     android.hardware.gnss@2.1-impl-mediatek \
-    android.hardware.thermal@2.0-impl \
     dfps.mt6785 \
     hwcomposer.mt6785 \
     kmsetkey.trustonic \
     libMcGatekeeper \
     libSoftGatekeeper \
     sensors.mt6785 \
-    thermal.mt6785 \
     vendor.mediatek.hardware.bluetooth.audio@2.1-impl \
     vendor.mediatek.hardware.camera.atms@1.0-impl \
     vendor.mediatek.hardware.camera.bgservice@1.1-impl \
@@ -1726,7 +1724,6 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3-service-mtk-neuron \
     android.hardware.secure_element@1.2-service-mediatek \
     android.hardware.sensors@2.0-service-mediatek \
-    android.hardware.thermal@2.0-service.mtk \
     android.hardware.usb@1.1-service-mediatek \
     camerahalserver \
     mtkfusionrild \
