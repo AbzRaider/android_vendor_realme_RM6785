@@ -796,7 +796,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg 
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.dep \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.load \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko 
+
 PRODUCT_PACKAGES += \
     libem_support_jni \
     libmtk_vt_wrapper \
