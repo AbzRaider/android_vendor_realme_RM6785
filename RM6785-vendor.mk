@@ -812,6 +812,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.dep \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/lib/modules/modules.load \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+    vendor/realme/RM6785/proprietary/vendor/lib/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmpbase.so \
+    vendor/realme/RM6785/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko 
 
 PRODUCT_PACKAGES += \
@@ -1525,7 +1527,6 @@ PRODUCT_PACKAGES += \
     liblpcnr \
     libmfllcore \
     libml_util \
-    libmpbase \
     libmsnr \
     libmtk-ril \
     libmtkcam.atmseventmgr \
