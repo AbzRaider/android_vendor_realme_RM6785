@@ -558,7 +558,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/etc/init/tee.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/trustonic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/trustonic.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dfps@1.0-service.rc \
-    vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.dplanner@2.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.gpu@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keyinstall@1.0-service.rc \
     vendor/realme/RM6785/proprietary/vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc \
@@ -797,12 +796,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_bt_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_bt_2a_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_mcu_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_mcu_2a_1_hdr.bin \
     vendor/realme/RM6785/proprietary/vendor/firmware/soc1_0_ram_wifi_2a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc1_0_ram_wifi_2a_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_bt_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_bt_1_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_bt_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_bt_1a_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_1_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_1a_1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_1a_1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/firmware/soc3_0_ram_mcu_e1_hdr.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/soc3_0_ram_mcu_e1_hdr.bin \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
+    vendor/realme/RM6785/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
+    vendor/realme/RM6785/proprietary/vendor/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/modules/modules.dep \
+    vendor/realme/RM6785/proprietary/vendor/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/modules/modules.load
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
@@ -1646,7 +1644,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0 \
     vendor.mediatek.hardware.camera.security@1.0 \
     vendor.mediatek.hardware.dfps@1.0 \
-    vendor.mediatek.hardware.dplanner@2.0 \
     vendor.mediatek.hardware.engineermode@1.0 \
     vendor.mediatek.hardware.engineermode@1.1 \
     vendor.mediatek.hardware.engineermode@1.2 \
@@ -1696,7 +1693,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     oplus_appradio_device_manifest \
     oplus_radio_device_manifest \
-    vendor.mediatek.hardware.dplanner@2.0-service \
     vtservice \
     atcid \
     audiocmdservice_atci \
@@ -1706,11 +1702,6 @@ PRODUCT_PACKAGES += \
     ccci_mdinit \
     ccci_rpcd \
     charon \
-    dconfig \
-    dexecutor \
-    doeapp-memtester \
-    doeapp-sat \
-    dtc_vendor \
     em_hidl \
     epdg_wod \
     factory \
@@ -1730,7 +1721,6 @@ PRODUCT_PACKAGES += \
     camerahalserver \
     mtkfusionrild \
     vendor.mediatek.hardware.dfps@1.0-service \
-    vendor.mediatek.hardware.dplanner@2.0-service \
     vendor.mediatek.hardware.gpu@1.0-service \
     vendor.mediatek.hardware.keyinstall@1.0-service \
     vendor.mediatek.hardware.keymaster_attestation@1.1-service \
