@@ -6,7 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/RM6785
 
 PRODUCT_COPY_FILES += \
-    vendor/realme/RM6785/proprietary/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/init.vtservice.rc \
     vendor/realme/RM6785/proprietary/product/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/audio_device.xml \
     vendor/realme/RM6785/proprietary/odm/etc/audio/audio_device/common/audio_device.xml:$(TARGET_COPY_OUT_ODM)/etc/audio/audio_device/common/audio_device.xml \
@@ -174,6 +173,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09070000000000000000000000000000.drbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09070000000000000000000000000000.drbin \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09080000000000000000000000000000.tlbin \
     vendor/realme/RM6785/proprietary/odm/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_ODM)/vendor/app/mcRegistry/09150000000000000000000000000000.tlbin \
+    vendor/realme/RM6785/proprietary/system_ext/etc/init/init.vtservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.vtservice.rc \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.drbin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/020b0000000000000000000000000000.tlbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020b0000000000000000000000000000.tlbin \
     vendor/realme/RM6785/proprietary/vendor/app/mcRegistry/020f0000000000000000000000000000.drbin:$(TARGET_COPY_OUT_VENDOR)/app/mcRegistry/020f0000000000000000000000000000.drbin \
@@ -804,28 +804,12 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/fpsgo.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/fpsgo.ko \
     vendor/realme/RM6785/proprietary/vendor/lib/modules/kheaders.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/kheaders.ko \
     vendor/realme/RM6785/proprietary/vendor/modules/modules.dep:$(TARGET_COPY_OUT_VENDOR)/modules/modules.dep \
-    vendor/realme/RM6785/proprietary/vendor/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/modules/modules.load \
-    vendor/realme/RM6785/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg
+    vendor/realme/RM6785/proprietary/vendor/modules/modules.load:$(TARGET_COPY_OUT_VENDOR)/modules/modules.load
 
 PRODUCT_PACKAGES += \
     libem_support_jni \
-    libmtk_vt_wrapper \
-    libmtkavenhancements \
-    libvcodec_cap \
-    libvcodec_capenc \
-    libvsim-adaptor-client \
     libaptXHD_encoder \
     libaptX_encoder \
-    libcomutils \
-    libimsma \
-    libimsma_adapt \
-    libimsma_rtp \
-    libimsma_socketwrapper \
-    libmtk_vt_service \
-    libsignal \
-    libsink \
-    libsource \
-    libvt_avsync \
     arm.graphics-V1-ndk_platform \
     libGLES_mali \
     libGLES_meow \
@@ -838,7 +822,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2-impl \
     vendor.mediatek.hardware.nvram@1.1-impl \
     vendor.mediatek.hardware.pq@2.6-impl \
-    vendor.mediatek.hardware.videotelephony@1.0-impl \
     libOpenCL \
     libTEECommon \
     libaedv \
@@ -920,7 +903,6 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.pq@2.4 \
     vendor.mediatek.hardware.pq@2.5 \
     vendor.mediatek.hardware.pq@2.6 \
-    vendor.mediatek.hardware.videotelephony@1.0 \
     AVCSecureVdecCA \
     VP9SecureVdecCA \
     audio.primary.mt6785 \
@@ -1034,6 +1016,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.camera.postproc@1.0-impl \
     vendor.mediatek.hardware.dfps@1.0-impl \
     vendor.mediatek.hardware.keymaster_attestation@1.1-impl \
+    vendor.mediatek.hardware.videotelephony@1.0-impl \
     imx471_mipi_raw1_IdxMgr \
     imx471_mipi_raw1_tuning \
     imx682_mipi_raw_IdxMgr \
@@ -1664,6 +1647,7 @@ PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mdmonitor@1.0 \
     vendor.mediatek.hardware.mtkradioex@2.0 \
     vendor.mediatek.hardware.pplagent@1.0 \
+    vendor.mediatek.hardware.videotelephony@1.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.0 \
     vendor.mediatek.hardware.wifi.supplicant@2.1 \
     vendor.mediatek.hardware.wifi.supplicant@2.2 \
@@ -1671,6 +1655,20 @@ PRODUCT_PACKAGES += \
     vendor.trustonic.tee.tui@1.0 \
     vendor.trustonic.tee@1.0 \
     vendor.trustonic.tee@1.1 \
+    libcomutils \
+    libimsma \
+    libimsma_adapt \
+    libimsma_rtp \
+    libimsma_socketwrapper \
+    libmtk_vt_service \
+    libmtk_vt_wrapper \
+    libsignal \
+    libsink \
+    libsource \
+    libvcodec_cap \
+    libvcodec_capenc \
+    libvt_avsync \
+    vendor.mediatek.hardware.videotelephony-V1-ndk \
     vendor.mediatek.hardware.videotelephony@1.0.system_ext \
     liboemcrypto \
     libormshalclient \
@@ -1701,7 +1699,6 @@ PRODUCT_PACKAGES += \
     manifest_android.hardware.drm@1.3-service.widevine \
     oplus_appradio_device_manifest \
     oplus_radio_device_manifest \
-    vtservice \
     atcid \
     audiocmdservice_atci \
     autobt \
@@ -1770,4 +1767,5 @@ PRODUCT_PACKAGES += \
     wmt_loader \
     wpa_cli \
     xcap \
+    vtservice \
     vendor.oplus.hardware.biometrics.fingerprint@2.1-service
